@@ -8,3 +8,6 @@ Configuration backup
 
 ### ~/.config/starship.toml
 Configuration backup
+
+### /etc/sshd/sshd_config
+Configuration backup
