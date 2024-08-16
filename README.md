@@ -11,3 +11,6 @@ Configuration backup
 
 ### /etc/sshd/sshd_config
 Configuration backup
+
+### ssh_connect.sh
+Uses GUM to create a more glamorous shell script to connect throush SSH using key
