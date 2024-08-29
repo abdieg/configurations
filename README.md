@@ -3,7 +3,7 @@
 ### authentik_docker
 This file works with Nginx Proxy Manager so that Authentik filters the access
 
-### ~/.zshrc
+### ~/.zshrc_mac
 Configuration backup
 
 ### ~/.config/starship.toml
