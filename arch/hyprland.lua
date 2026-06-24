@@ -264,8 +264,9 @@ hl.device({
 ---- KEYBINDINGS ----
 ---------------------
 
-local mainMod = "SUPER"           -- Sets "Windows" key as main modifier
-local secondMod = "SUPER + SHIFT" -- Sets "Windows" key as main modifier
+local mainMod = "SUPER"            -- Sets "Windows" key as main modifier
+local secondMod = "SUPER + SHIFT"  -- Sets "Windows" key as main modifier
+local thirdMod = "SUPER + CONTROL" -- Sets "Windows" key as main modifier
 
 -- Example binds, see https://wiki.hypr.land/Configuring/Basics/Binds/ for more
 hl.bind(mainMod .. " + T", hl.dsp.exec_cmd(terminal))
@@ -293,6 +294,8 @@ hl.bind(secondMod .. " + right", hl.dsp.window.move({ direction = "right" }))
 hl.bind(secondMod .. " + up", hl.dsp.window.move({ direction = "up" }))
 hl.bind(secondMod .. " + down", hl.dsp.window.move({ direction = "down" }))
 
+hl.bind("Print", hl.dsp.exec_cmd("grim -g \"$(slurp)\" - | wl-copy"))
+hl.bind("SHIFT + Print", hl.dsp.exec_cmd("grim -g \"$(slurp)\" ~/screenshots/$(date +%Y-%m-%d_%H-%M-%S).png | wl-copy"))
 
 -- Switch workspaces with mainMod + [0-9]
 -- Move active window to a workspace with mainMod + SHIFT + [0-9]
