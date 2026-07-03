@@ -1,6 +1,4 @@
-
 # The following lines were added by compinstall
-
 zstyle ':completion:*' completer _expand _complete _ignored _correct _approximate
 zstyle ':completion:*' list-colors ''
 zstyle ':completion:*' menu select=long
@@ -12,6 +10,7 @@ zstyle :compinstall filename '/home/oberon/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=10000
@@ -31,5 +30,3 @@ alias battery="acpi"
 
 eval "$(zoxide init zsh)"
 alias cd="z"
-
-neofetch | lolcat
