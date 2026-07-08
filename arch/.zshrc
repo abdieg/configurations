@@ -27,6 +27,17 @@ alias ls="eza --icons=always"
 alias lt="eza --icons=always --long --tree --level=3"
 
 alias battery="acpi"
+alias superfile="spf"
+alias lzg='lazygit'
+alias vim='nvim'
+alias nas='ssh -i ~/.ssh/arch -p port user@server'
 
 eval "$(zoxide init zsh)"
 alias cd="z"
+
+# Use 'cat -v' command to see the key mapping
+zmodload zsh/terminfo
+bindkey "${terminfo[kdch1]}" delete-char
+bindkey "^[[H" beginning-of-line
+bindkey "^[[F" end-of-line
+export PATH="${HOME}/.local/bin":${PATH}
