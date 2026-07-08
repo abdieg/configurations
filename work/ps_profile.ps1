@@ -1,3 +1,5 @@
+# RELOAD with '. $PROFILE'
+
 oh-my-posh init pwsh --config "C:\...\probua.minimal.omp.json" | Invoke-Expression
 
 # =============================================================================
@@ -134,3 +136,19 @@ Set-Alias -Name zi -Value __zoxide_zi -Option AllScope -Scope Global -Force
 # =============================================================================
 
 Invoke-Expression (& { (zoxide init powershell | Out-String) })
+
+# =============================================================================
+# Linux-style navigation
+# =============================================================================
+
+# ---- ".." and "..." to go up levels ----
+function .. { Set-Location .. }
+function ... { Set-Location ..\.. }
+function .... { Set-Location ..\..\.. }
+
+# =============================================================================
+# Eza (better "ls") - install with: winget install eza-community.eza
+# =============================================================================
+function l  { eza -l --icons=always @args }
+function la { eza -lahF --icons=always @args }
+function lt { eza --icons=always --long --tree --level=3 @args }
