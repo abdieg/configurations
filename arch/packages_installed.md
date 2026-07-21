@@ -77,3 +77,11 @@ yay-debug 13.0.1-1
 zed 1.9.0-1
 zoxide 0.9.9-2
 zsh 5.9.1-1
+
+
+❯ pacman -Qm
+noctalia-qs 0.0.12-1
+noctalia-shell 4.7.7-3
+spotify 1:1.2.92.147-1
+yay 13.0.1-1
+yay-debug 13.0.1-1
